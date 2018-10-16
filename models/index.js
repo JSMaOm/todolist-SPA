@@ -7,16 +7,11 @@ mongoose.set('debug', true);
 mongoose.Promise = Promise;
 
 
+/* const mongooseConnectionString = 'mongodb://localhost/todo_api?authSource=admin'; */
+const mongooseConnectionString = 'mongodb://localhost/todo_api';
 
-const options = {
-  user: "maom",
-  pass: "hgHlgtdrgfd.3",
-  useMongoClient: true
-};
-
-const mongooseConnectionString = 'mongodb://localhost/todo_api?authSource=admin';
-
-mongoose.connect(mongooseConnectionString, options);
+/* mongoose.connect(mongooseConnectionString, options); */
+mongoose.connect(mongooseConnectionString);
 
 
 module.exports.Todo = require('./todo');
