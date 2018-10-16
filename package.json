@@ -5,7 +5,7 @@
   "main": "app.js",
   "scripts": {
     "ugly": "uglifycss public/app.css > public/app-mini.css",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "todo": "npm run ugly && node app.js"
   },
   "author": "",
   "license": "ISC",
